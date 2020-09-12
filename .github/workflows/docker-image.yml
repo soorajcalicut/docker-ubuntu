@@ -19,7 +19,7 @@ jobs:
     - name: Push to Docker Hub
       uses: docker/build-push-action@v1
       with:
-        username: ${{ secrects.D_HUB_USER }}
-        password: ${{ secrects.D_HUB_PWD }}
+        username: ${{ secrets.D_HUB_USER }}
+        password: ${{ secrets.D_HUB_PWD }}
         repository: soorajcalicut/ubuntu
         tag_with_ref: true
